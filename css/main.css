@@ -1,0 +1,99 @@
+@font-face {
+    font-family: hacka;
+    src: url(fonts/hacka.ttf);
+  }
+  @font-face {
+    font-family: madHacker;
+    src: url(fonts/madHacker.ttf);
+  }
+
+.titleText{
+    font-family: madHacker;
+    font-size: 40px;
+    color: #70FF29
+}
+.center{
+    justify-content: center;
+    display: flex;
+}
+.hackingPanel{
+    border: 5px solid #70FF29;
+    border-radius: 10px;
+    height: 400px;
+    width: 450px!important;
+}
+.sideFiller{
+    display: flex;
+}
+.popperCustom{
+    z-index: 4;
+    position: absolute;
+}
+* {margin: 0; padding: 0}
+canvas {
+    z-index: -1;
+    position: relative;
+}
+
+.hackingPanel {
+    border: 3px solid #70FF29;
+    border-radius: 10px;
+    height: 400px;
+    width: 450px!important;
+
+}
+.col-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+
+
+.hackingPanel, ::after, ::before {
+    box-sizing: content-box;
+}
+
+  body {
+      background:  radial-gradient(circle, rgba(112,255,41,1) 0%, rgba(0,0,0,1) 100%);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  .row{
+    --bs-gutter-x: 0rem;
+  }
+  html, body {
+    width: 100%;
+    height:100%;
+  }
+  .filler{
+    height: 80px;
+  }
+  .buttonCol{
+    justify-content: center;
+    text-align: center;
+  }
+  .btn{
+    height: 75px;
+    width: 450px;
+    font-family: hacka;
+    font-size: 20px;
+    background-color: black;
+    color:#70FF29;
+    border: none;
+  }
+  .btn:hover{
+    background-color: #70FF29;
+    color: black;
+    border-color: white;
+  }
